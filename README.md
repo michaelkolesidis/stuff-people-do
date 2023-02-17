@@ -18,7 +18,9 @@
 
 ## Description
 
-<p>This is one of my very first projects (and it shows 😛) . Notes are stored in an array as objects.</p>
+A simple app featuring post it notes of various colors. Each note is an object. Notes are saved in local storage an retrieved on load. Notes can be edited and edits are saved as well.
+
+Note: This is one of my very first projects (and it shows 😛) .
 
 ## License
 
