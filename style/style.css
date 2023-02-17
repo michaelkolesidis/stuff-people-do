@@ -1,16 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
 :root {
-  --gray: rgb(121, 120, 120);
+  --gray: rgb(212, 212, 212);
+  --white: rgb(255, 255, 255);
+  --black: rgb(10, 10, 10);
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 html,
 body {
   font-family: sans-serif;
   background-color: var(--gray);
-  margin: 0;
 }
 
 [contenteditable] {
@@ -20,7 +27,8 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  margin: 0 0 -1rem 2rem;
+  margin: 0 0 -1rem 0;
+  background-color: var(--white);
 }
 
 header > div {
@@ -30,8 +38,11 @@ header > div {
 
 #title {
   font-size: 2rem;
-  color: white;
-  margin-right: 3rem;
+  color: var(--white);
+  margin: 0.5em 1em;
+  color: var(--black);
+  line-height: 0.9em;
+  font-family: "Manrope", sans-serif;
 }
 
 input {
@@ -40,11 +51,12 @@ input {
   line-height: 1.4rem;
   font-size: 1.4rem;
   padding-left: 0.4rem;
-  color: white;
+  color: var(--black);
   outline: none;
   border: none;
-  background-color: var(--gray);
-  border: 2px solid rgb(255, 255, 255);
+  background-color: var(--white);
+  border: 2px solid rgb(0, 0, 0);
+  font-family: "Caveat", cursive;
 }
 
 input:focus {
@@ -54,26 +66,34 @@ input:focus {
 #add-button {
   height: 2rem;
   line-height: 1.6rem;
-  font-size: 1.6rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
   margin: 1rem;
   padding: 0.1rem 1rem 1rem 1rem;
   outline: none;
-  background-color: var(--gray);
+  background-color: var(--white);
   border: none;
-  color: white;
+  color: var(--black);
   font-weight: 600;
   cursor: pointer;
-  border: 2px dotted white;
+  border: 2px solid var(--black);
+  font-family: "Manrope", sans-serif;
 }
 
 #add-button:hover {
-  border: 2px solid white;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+#copyright {
+  position: absolute;
+  right: 2em;
 }
 
 #notes-board {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 0;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 2em;
 }
 
 .note {
@@ -81,19 +101,15 @@ input:focus {
   height: 200px;
   padding: 1rem;
   list-style-type: none;
-  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  box-shadow: 5px 5px rgba(60, 60, 60, 0.7);
   font-size: 2rem;
-  font-weight: 600;
-  margin: 2rem;
-  /* transform: rotate(-6deg); */
-  /* transition: transform 0.15s linear; */
+  font-family: "Caveat", cursive;
+  font-weight: 500;
+  margin: 3rem;
 }
 
 .note:hover {
-  box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
-  /* transform: scale(1.25); */
-  /* position: relative; */
-  /* z-index: 5; */
+  box-shadow: 10px 10px rgba(20, 20, 20, 0.7);
 }
 
 .note > button {
@@ -115,4 +131,52 @@ input:focus {
 
 .note > button:hover {
   transform: scale(2);
+}
+
+@media screen and (min-width: 400px) {
+  #notes-board {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #notes-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #notes-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #notes-board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  #notes-board {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 2100px) {
+  #notes-board {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 0;
+  }
 }

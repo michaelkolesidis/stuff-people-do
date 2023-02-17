@@ -1,9 +1,10 @@
 "use strict";
 
-const YELLOW = `rgb(255, 255, 204)`;
-const GREEN = `rgb(204,255,204)`;
-const PURPLE = `rgb(204,204,255)`;
-const PINK = `rgb(255,204,204)`;
+const ORANGE = `rgb(243,154,79)`;
+const YELLOW = `rgb(249,200,71)`;
+const GREEN = `rgb(171,204,81)`;
+const BLUE = `rgb(74,182,217)`;
+const PINK = `rgb(235,96,146)`;
 
 const input = <HTMLInputElement>document.getElementById("input");
 
@@ -24,13 +25,13 @@ const createNote = function () {
     rotation: "",
   };
 
-  let num = Math.floor(Math.random() * 4);
+  let num = Math.floor(Math.random() * 5);
   switch (num) {
     case 0:
       note.color = YELLOW;
       break;
     case 1:
-      note.color = PURPLE;
+      note.color = BLUE;
       break;
     case 2:
       note.color = GREEN;
@@ -38,6 +39,8 @@ const createNote = function () {
     case 3:
       note.color = PINK;
       break;
+    case 4:
+      note.color = ORANGE;
   }
 
   let rotation = Math.floor(Math.random() * 13) - 6;
@@ -55,7 +58,7 @@ const render = function () {
     element.style.transform = `rotate(${stickyNotes[i].rotation}deg)`;
 
     const removeButton = document.createElement("button");
-    removeButton.textContent = "x";
+    removeButton.textContent = "✕";
     removeButton.classList.add("remove-button");
     removeButton.setAttribute("id", stickyNotes[i].id);
     removeButton.style.backgroundColor = `rgba(0, 0, 0, 0)`;
@@ -90,4 +93,3 @@ addButton.addEventListener("click", () => {
   render();
   input.value = ``;
 });
-
