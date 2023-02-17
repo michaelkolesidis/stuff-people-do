@@ -1,15 +1,12 @@
-<div align="center">
-  <img src="./screenshots/sticky-notes-01.png" width="700px>
-
-  <h1>Sticky Notes</h1>
-  
-  <h4>Fill your screen with sticky notes of various colors</h4>
-
-<a href="https://sticky-notesjs.netlify.app/"><h3>Try me!</h3></a>
+![screenshot](./screenshots/sticky-notes-01.png)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/08cee434-3817-4957-9754-d496765ea8e9/deploy-status)](https://app.netlify.com/sites/sticky-notesjs/deploys)
 
-</div>
+# Sticky Notes
+  
+#### Fill your screen with sticky notes of various colors
+
+[**Try me**](https://sticky-notesjs.netlify.app)
 
 ## Technologies Used
 
