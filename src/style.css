@@ -5,6 +5,10 @@
   --gray: rgb(212, 212, 212);
   --white: rgb(255, 255, 255);
   --black: rgb(10, 10, 10);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 * {

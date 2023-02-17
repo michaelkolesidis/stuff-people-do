@@ -1,23 +1,18 @@
 {
-  "name": "sticky-notes-ts",
+  "name": "sticky-notes",
   "version": "1.0.0",
-  "description": "<div align=\"center\">   <img src=\"./screenshots/sticky-notes.png\">   <h1>Sticky Notes</h1>",
-  "main": "index.js",
+  "description": "Fill your screen with sticky notes of various colors.",
+  "author": "Michael Kolesidis",
+  "email": "michael.kolesidis@gmail.com",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
   "scripts": {
-    "build": "tsc --build",
-    "clean": "tsc --build --clean"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/michaelkolesidis/sticky-notes.git"
-  },
-  "author": "",
-  "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/michaelkolesidis/sticky-notes/issues"
-  },
-  "homepage": "https://github.com/michaelkolesidis/sticky-notes#readme",
   "devDependencies": {
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
   }
 }

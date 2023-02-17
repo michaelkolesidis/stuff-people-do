@@ -2,7 +2,7 @@
 // Licensed under the GNU Affero General Public License v3.0.
 // https://www.gnu.org/licenses/gpl-3.0.html
 
-import { ORANGE, YELLOW, GREEN, BLUE, PINK } from "./colors.js";
+import { ORANGE, YELLOW, GREEN, BLUE, PINK } from "./colors";
 
 // Create note
 export const createNote = (input: HTMLInputElement, stickyNotes: any) => {
