@@ -5,7 +5,7 @@
   
   <h4>Fill your screen with sticky notes of various colors</h4>
 
-  <h3><a href="https://sticky-notesjs.netlify.app/">Try me!</a></h3>
+<a href="https://sticky-notesjs.netlify.app/"><h3>Try me!</h3></a>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/08cee434-3817-4957-9754-d496765ea8e9/deploy-status)](https://app.netlify.com/sites/sticky-notesjs/deploys)
 
