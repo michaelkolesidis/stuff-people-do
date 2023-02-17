@@ -57,7 +57,6 @@ export const addNote = (
 
 // Render
 export const render = (stickyNotes: any, notesBoard: any) => {
-  console.log(stickyNotes.length);
   for (let i = 0; i < stickyNotes.length; i++) {
     const noteContainer = document.createElement("li");
     noteContainer.setAttribute("id", stickyNotes[i].id);
@@ -85,7 +84,6 @@ export const render = (stickyNotes: any, notesBoard: any) => {
         if (event) {
           const target = event.target as HTMLParagraphElement;
           let noteId = target.id;
-          console.log("input event fired");
           for (let i = 0; i < stickyNotes.length; i++) {
             if (stickyNotes[i].id == noteId) {
               stickyNotes[i].text = noteText.innerText;
