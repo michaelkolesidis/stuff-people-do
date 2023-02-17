@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/08cee434-3817-4957-9754-d496765ea8e9/deploy-status)](https://app.netlify.com/sites/sticky-notesjs/deploys)
 
 # Sticky Notes
-  
+
 #### Fill your screen with sticky notes of various colors
 
 [**Try me**](https://sticky-notesjs.netlify.app)
