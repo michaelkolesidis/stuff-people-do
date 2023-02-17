@@ -6,7 +6,7 @@
 
 #### Fill your screen with sticky notes of various colors
 
-[**Try me!**](https://sticky-notesjs.netlify.app)
+[**Try me!**](https://sticky-notes-ts.vercel.app/)
 
 ## Technologies Used
 
