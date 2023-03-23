@@ -18,7 +18,7 @@ input.addEventListener("keydown", function (event) {
   }
 });
 
-// Notes Boars
+// Notes Board
 const notesBoard = document.getElementById("notes-board");
 
 // Add Button
